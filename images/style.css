@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 20vmin);
+  grid-template-rows: repeat(6, 20vmin);
+  width: 40vw;
+  margin-top: 3%;
+  margin-left: 25%;
+  justify-content: center;
+  align-content: center;
+}
+
+a.box {
+  align-content: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+a.box:hover {
+  opacity: 0.8;
+}
+
+img.logo {
+  width: 50%;
+  margin-top: 25%;
+}
+
+@media (min-width: 1342px) {
+  .wrapper {
+    transform: rotate(-45deg);
+  }
+  img.logo {
+    transform: rotate(45deg);
+  }
+}
+
+.name {
+  grid-column: 2 / 5;
+  background-image: url(img/name.svg);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+div.box {
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.huggingface {
+  border: 1px solid #006cd7;
+}
+
+.scholar {
+  background-color: #4186f4;
+}
+
+.linkedin {
+  background-color: #2768b2;
+}
+
+.eva {
+  border: 1px solid #006cd7;
+}
+
+.qcon {
+  background-color: #f9f9fb;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.github {
+  background-color: #181616;
+}
+
+.youtube {
+  background-color: #ff0202;
+}
+
+.book {
+  background-image: url(img/book.jpg);
+  background-size: 100%;
+}
+
+.medium {
+  background-color: #151210;
+}
